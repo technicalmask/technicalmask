@@ -1,0 +1,53 @@
+/workspaces/Uploader-Bot (V2.0) $ /home/codespace/.python/current/bin/python3 /workspaces/Uploader-Bot/bot.py
+Traceback (most recent call last):
+  File "/workspaces/Uploader-Bot/bot.py", line 6, in <module>
+    from config import Config
+  File "/workspaces/Uploader-Bot/config.py", line 3, in <module>
+    class Config(object):
+  File "/workspaces/Uploader-Bot/config.py", line 27, in Config
+    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+ValueError: invalid literal for int() with base 10: ''
+@technicalmask ➜ /workspaces/Uploader-Bot (V2.0) $ /home/codespace/.python/current/bin/python3 /workspaces/Uploader-Bot/bot.py
+2023-09-28 09:58:09,101 - pyrogram.dispatcher - ERROR - [Errno 2] No such file or directory: 'yt-dlp'
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/workspaces/Uploader-Bot/plugins/youtube_dl_echo.py", line 96, in echo
+    process = await asyncio.create_subprocess_exec(
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/subprocess.py", line 218, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/base_events.py", line 1670, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/unix_events.py", line 207, in _make_subprocess_transport
+    transp = _UnixSubprocessTransport(self, protocol, args, shell,
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/unix_events.py", line 800, in _start
+    self._proc = subprocess.Popen(
+  File "/home/codespace/.python/current/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/codespace/.python/current/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'yt-dlp'
+/home/codespace/.python/current/bin/python3 /workspaces/Uploader-Bot/bot.py
+2023-09-28 10:05:18,211 - pyrogram.dispatcher - ERROR - [Errno 2] No such file or directory: 'yt-dlp'
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/workspaces/Uploader-Bot/plugins/youtube_dl_echo.py", line 96, in echo
+    process = await asyncio.create_subprocess_exec(
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/subprocess.py", line 218, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/base_events.py", line 1670, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/unix_events.py", line 207, in _make_subprocess_transport
+    transp = _UnixSubprocessTransport(self, protocol, args, shell,
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "/home/codespace/.python/current/lib/python3.10/asyncio/unix_events.py", line 800, in _start
+    self._proc = subprocess.Popen(
+  File "/home/codespace/.python/current/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/codespace/.python/current/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'yt-dlp'
